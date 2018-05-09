@@ -33,7 +33,7 @@ get_apk
 ######install depend
 depend="lrzsz screen iftop htop wget git curl "
 $apk_install update&&$apk_install upgrade
-$apk_install install -y depend
+$apk_install install -y $depend
 #######install lnmp
 wget http://soft.vpser.net/lnmp/lnmp1.5beta.tar.gz -cO lnmp1.5beta.tar.gz && tar zxf lnmp1.5beta.tar.gz && cd lnmp1.5 && LNMP_Auto="y" DBSelect="2" DB_Root_Password="icui4cu" InstallInnodb="y" PHPSelect="8" SelectMalloc="1" ./install.sh lnmp
 
